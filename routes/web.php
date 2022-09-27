@@ -18,7 +18,7 @@ Route::get('/', function () {
     $navLinks = config('navLinks');
     $footLinks = config('footLinks');
     $comicsArr = config('comics');
-    return view('comicsSection', ['links' => $navLinks], ['comicsList' => $comicsArr], ['footLinks' => $footLinks]);
+    return view('comicsSection', ['comicsList' => $comicsArr], ['footLinks' => $footLinks], ['links' => $navLinks]);
 
 })->name('home');
 

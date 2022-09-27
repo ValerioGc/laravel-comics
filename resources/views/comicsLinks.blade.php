@@ -1,5 +1,5 @@
-<div class="container-comics brand-style">
-    <ul>
+<div class="">
+    <ul class="container-comics brand-style">
         <li>
             <img src="{{asset('img/buy-comics-digital-comics.png')}}" alt="Link" />
             <a href="#">

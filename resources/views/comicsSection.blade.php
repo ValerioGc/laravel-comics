@@ -15,7 +15,7 @@
                                 <img src="{{$comics['thumb']}}" alt="'Copertina ' . {{$comics['series']}} " />
                                 <span class="price">Price</span>
                             </a>
-                            <h3>Load More</h3>
+                            <h3>{{$comics['series']}}</h3>
                         </li>
                         @endforeach
         </ul>
