@@ -4,14 +4,16 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 80%;
-  margin: auto;
+  margin: 0 auto;
   background-color: #ffffff;
+  padding: 1rem 0;
 }
 
 header a {
   color: #464646;
   border-bottom: 3px solid transparent;
-  padding: 3.3rem 1rem;
+  padding: 3.9rem 1rem;
+  cursor: pointer;
 }
 
 header a:hover {
@@ -33,7 +35,6 @@ header .active {
 
 header .logo {
   width: 5%;
-  margin: 20px 0;
 }
 
 .jumbo {
@@ -47,6 +48,14 @@ header .logo {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+}
+
+.container-content {
+  background-color: #1C1C1C;
+}
+
+.container-content .content {
+  color: #ffffff;
 }
 
 .comics-list-container {
@@ -126,20 +135,20 @@ header .logo {
   background-color: #ffffff;
 }
 
-.comics-card {
+.comics-list-container .comics-card {
   width: calc(16.6666666667% - 20px);
   height: 25vh;
   margin: 40px 0px;
 }
 
-.comics-card a {
+.comics-list-container .comics-card a {
   position: relative;
   display: inline-block;
   height: 100%;
   width: 100%;
 }
 
-.comics-card a img {
+.comics-list-container .comics-card a img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
@@ -148,17 +157,17 @@ header .logo {
   height: 100%;
 }
 
-.comics-card a img:hover {
+.comics-list-container .comics-card a img:hover {
   filter: brightness(50%);
   transition: all 0.2s linear 0.1s;
   border-radius: 10px;
 }
 
-.comics-card a img:hover .price {
+.comics-list-container .comics-card a img:hover .price {
   display: inline-block;
 }
 
-.comics-card a .price {
+.comics-list-container .comics-card a .price {
   display: none;
   position: absolute;
   top: 50%;
@@ -170,9 +179,49 @@ header .logo {
   text-shadow: 2px 2px 3px #1C1C1C;
 }
 
-.comics-card h3 {
+.comics-list-container .comics-card h3 {
   font-size: 1.1rem;
   padding: 10px 0;
+}
+
+.container-comics {
+  width: 100%;
+  padding: 70px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.container-comics ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.container-comics ul li {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.container-comics ul li img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.container-comics ul li h3 {
+  color: #ffffff;
+  line-height: 40px;
+}
+
+.container-comics ul li h3:hover {
+  transition: all 0.3s linear 0.1s;
+  color: #797979;
+  text-decoration: underline;
 }
 
 footer {

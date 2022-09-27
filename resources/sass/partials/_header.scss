@@ -2,13 +2,15 @@ header {
     @include flex-center('vertical');
     @include justify('space_between');
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     background-color: $light_color;
+    padding: 1rem 0;
 
     a {
         color: $alt_dark_color;
         border-bottom: 3px solid transparent;
-        padding: 3.3rem 1rem;
+        padding: 3.9rem 1rem;
+        cursor: pointer;
 
         &:hover {
             color: $brand_color;
@@ -28,6 +30,5 @@ header {
 
     .logo {
         width: 5%;
-        margin: 20px 0;
     }
 }

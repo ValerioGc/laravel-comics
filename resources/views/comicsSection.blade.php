@@ -9,15 +9,15 @@
         <h2 class="comics-section-title brand-style">Current Series</h2>
         <!-- Fumetti -->
         <ul class="comics-list">
-                        @foreach($comicsList as $comics)
-                        <li class="comics-card">
-                            <a href="#">
-                                <img src="{{$comics['thumb']}}" alt="'Copertina ' . {{$comics['series']}} " />
-                                <span class="price">Price</span>
-                            </a>
-                            <h3>{{$comics['series']}}</h3>
-                        </li>
-                        @endforeach
+            @foreach($comicsList as $comics)
+            <li class="comics-card">
+                <a href="#">
+                    <img src="{{$comics['thumb']}}" alt="'Copertina ' . {{$comics['series']}} " />
+                    <span class="price">Price</span>
+                </a>
+                <h3>{{$comics['series']}}</h3>
+            </li>
+            @endforeach
         </ul>
         <!-- bottone carica altro -->
         <a class="button brand-style" href="#">Load More</a>
