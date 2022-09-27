@@ -1,0 +1,33 @@
+header {
+    @include flex-center('vertical');
+    @include justify('space_between');
+    width: 80%;
+    margin: auto;
+    background-color: $light_color;
+
+    a {
+        color: $alt_dark_color;
+        border-bottom: 3px solid transparent;
+        padding: 3.3rem 1rem;
+
+        &:hover {
+            color: $brand_color;
+            border-bottom: 3px solid $brand_color;
+        }
+    }
+
+    ul {
+        @include flex-center('vertical');
+        @include justify('space_between');
+    }
+
+    .active {
+        border-color:$brand_color;
+        color: $brand_color;
+    }
+
+    .logo {
+        width: 5%;
+        margin: 20px 0;
+    }
+}
