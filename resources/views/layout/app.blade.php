@@ -12,7 +12,8 @@
         @include('partials.header')
 
         <main>
-            @yield('homePage-content')
+            @yield('jumbo')
+            @yield('homepage')
         </main>
 
         @include('partials.footer')

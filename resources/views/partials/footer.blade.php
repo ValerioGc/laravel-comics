@@ -1,13 +1,13 @@
 <footer class="appFooter">
     <div class="footer-top">
-        @foreach($footLinks as $item)
-            <div>
-                <h3>{{$item['title']}}</h3>
-                @foreach($item['linkName'] as $itemName)
-                    <a href="#">{{$itemName['name']}}</a>
-                @endforeach
-            </div>
-        @endforeach
+{{--        @foreach($footLinks as $item)--}}
+{{--            <div>--}}
+{{--                <h3>{{$item['title']}}</h3>--}}
+{{--                @foreach($item['linkName'] as $itemName)--}}
+{{--                    <a href="#">{{$itemName['name']}}</a>--}}
+{{--                @endforeach--}}
+{{--            </div>--}}
+{{--        @endforeach--}}
     </div>
     <div class="footer-low">
         <a href="#" class="button">SIGN-UP NOW!</a>

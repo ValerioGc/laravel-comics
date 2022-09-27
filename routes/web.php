@@ -17,7 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $navLinks = config('navLinks');
     $footLinks = config('footLinks');
-    return view('layout.app', ['links' => $navLinks], ['footLinks' => $footLinks]);
-})->name('home');
+    $comicsArr = config('comics');
+    return view('comicsSection', ['links' => $navLinks], ['comicsList' => $comicsArr], ['footLinks' => $footLinks]);
 
+})->name('home');
 

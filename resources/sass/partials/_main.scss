@@ -1,0 +1,129 @@
+.container-content {
+    background-color: $dark_color;
+
+    .content {
+        color: $light_color;
+    }
+}
+
+
+
+.comics-list-container {
+    width: 80%;
+    margin: auto;
+    padding: 25px 0;
+    text-align: center;
+
+    .comics-section-title {
+        padding: 15px 20px;
+        position: relative;
+        top: -55px;
+        right: 42%;
+    }
+
+    .comics-list {
+        @include flex-center('vertical', 'yes');
+        @include justify('space_between');
+    }
+
+    .comics-card {
+        width: calc(100% / 6 - 30px);
+        height: calc(100vh / 4);
+        margin: 40px 15px;
+
+        a {
+            position: relative;
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+
+            img {
+                object-fit: cover;
+                object-position: top;
+                width: 100%;
+                height: 100%;
+
+                &:hover {
+                    filter: brightness(70%);
+                }
+                &:hover .comics-card a span {
+                    display: inline-block;
+                }
+            }
+
+            span {
+                display: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%);
+                font-weight: bold;
+                font-size: 20px;
+                color: $light_color;
+                text-shadow: 2px 2px 3px $dark_color;
+            }
+        }
+    }
+
+    .button {
+        padding: 15px 50px;
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+
+        &:hover {
+            border-radius: 10px;
+            transition: all 0.2s linear 0.1s;
+            color: $brand_color;
+            background-color:$light_color ;
+        }
+    }
+
+    //Card Fumetti
+    .comics-card {
+        width: calc(100% / 6 - 20px);
+        height: calc(100vh / 4);
+        margin: 40px 0px;
+
+        a {
+            position: relative;
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+
+            img {
+                object-fit: cover;
+                object-position: top;
+                width: 100%;
+                height: 100%;
+
+                &:hover {
+                    filter: brightness(50%);
+                    transition: all 0.2s linear 0.1s;
+                    border-radius: 10px;
+                }
+
+                &:hover .price {
+                    display: inline-block;
+                }
+            }
+
+            .price {
+                display: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%);
+                font-weight: bold;
+                font-size: 20px;
+                color: $light_color;
+                text-shadow: 2px 2px 3px $dark_color;
+            }
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            padding: 10px 0;
+        }
+    }
+}
