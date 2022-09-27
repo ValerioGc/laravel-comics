@@ -12,7 +12,7 @@ header {
 header a {
   color: #464646;
   border-bottom: 3px solid transparent;
-  padding: 3.9rem 1rem;
+  padding: 3.7rem 1rem;
   cursor: pointer;
 }
 
@@ -50,49 +50,46 @@ header .logo {
      object-position: top;
 }
 
-.container-content {
+main {
   background-color: #1C1C1C;
-}
-
-.container-content .content {
   color: #ffffff;
 }
 
-.comics-list-container {
+main .comics-list-container {
   width: 80%;
   margin: auto;
   padding: 25px 0;
   text-align: center;
 }
 
-.comics-list-container .comics-section-title {
+main .comics-list-container .comics-section-title {
   padding: 15px 20px;
   position: relative;
   top: -55px;
   right: 42%;
 }
 
-.comics-list-container .comics-list {
+main .comics-list-container .comics-list {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.comics-list-container .comics-card {
+main .comics-list-container .comics-card {
   width: calc(16.6666666667% - 30px);
   height: 25vh;
   margin: 40px 15px;
 }
 
-.comics-list-container .comics-card a {
+main .comics-list-container .comics-card a {
   position: relative;
   display: inline-block;
   height: 100%;
   width: 100%;
 }
 
-.comics-list-container .comics-card a img {
+main .comics-list-container .comics-card a img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
@@ -101,15 +98,15 @@ header .logo {
   height: 100%;
 }
 
-.comics-list-container .comics-card a img:hover {
+main .comics-list-container .comics-card a img:hover {
   filter: brightness(70%);
 }
 
-.comics-list-container .comics-card a img:hover .comics-card a span {
+main .comics-list-container .comics-card a img:hover .comics-card a span {
   display: inline-block;
 }
 
-.comics-list-container .comics-card a span {
+main .comics-list-container .comics-card a span {
   display: none;
   position: absolute;
   top: 50%;
@@ -121,34 +118,34 @@ header .logo {
   text-shadow: 2px 2px 3px #1C1C1C;
 }
 
-.comics-list-container .button {
+main .comics-list-container .button {
   padding: 15px 50px;
   margin-top: 5rem;
   margin-bottom: 1rem;
   text-align: center;
 }
 
-.comics-list-container .button:hover {
+main .comics-list-container .button:hover {
   border-radius: 10px;
   transition: all 0.2s linear 0.1s;
   color: #0282F9;
   background-color: #ffffff;
 }
 
-.comics-list-container .comics-card {
+main .comics-list-container .comics-card {
   width: calc(16.6666666667% - 20px);
   height: 25vh;
   margin: 40px 0px;
 }
 
-.comics-list-container .comics-card a {
+main .comics-list-container .comics-card a {
   position: relative;
   display: inline-block;
   height: 100%;
   width: 100%;
 }
 
-.comics-list-container .comics-card a img {
+main .comics-list-container .comics-card a img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
@@ -157,17 +154,17 @@ header .logo {
   height: 100%;
 }
 
-.comics-list-container .comics-card a img:hover {
+main .comics-list-container .comics-card a img:hover {
   filter: brightness(50%);
   transition: all 0.2s linear 0.1s;
   border-radius: 10px;
 }
 
-.comics-list-container .comics-card a img:hover .price {
+main .comics-list-container .comics-card a img:hover .price {
   display: inline-block;
 }
 
-.comics-list-container .comics-card a .price {
+main .comics-list-container .comics-card a .price {
   display: none;
   position: absolute;
   top: 50%;
@@ -179,7 +176,7 @@ header .logo {
   text-shadow: 2px 2px 3px #1C1C1C;
 }
 
-.comics-list-container .comics-card h3 {
+main .comics-list-container .comics-card h3 {
   font-size: 1.1rem;
   padding: 10px 0;
 }
