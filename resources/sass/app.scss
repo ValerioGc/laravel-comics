@@ -1,0 +1,28 @@
+@import './partials/vars';
+@import './partials/mixins';
+@import './partials/header';
+@import './partials/footer';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+ul,
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.brand-style {
+    color: $light_color;
+    background-color: $brand_color;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
