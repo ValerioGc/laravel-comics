@@ -230,6 +230,7 @@ footer .footer-top {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-image: url("/img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
