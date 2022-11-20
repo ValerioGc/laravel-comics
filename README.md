@@ -10,7 +10,7 @@
 <table align="center">
   <tbody>
     <tr>
-        <td colspan="2">:arrow_forward: Create and compile file .env</td>  
+        <td colspan="2" align="center" valign="center">:arrow_down: Create and compile file .env</td>  
     </tr>
     <tr>
         <td>:arrow_forward: NPM dependecies setup:</td>
